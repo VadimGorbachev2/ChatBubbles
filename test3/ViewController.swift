@@ -15,7 +15,8 @@ class ViewController: UITableViewController {
     "gdhfjkghsdfkjghdskflgjhsdflkgjhsdflgkjhsdf-erytkjdbnvcx,m",
     "fdfjgh what the fuck",
     "wwowowowoowowowoowowow",
-    "YOLO YOLO YOLO YOLO YOLO YOLO YOLO OYOOYOYOYOYOYOYOYOYOYOOYOYOY"
+    "YOLO YOLO YOLO YOLO YOLO YOLO YOLO OYOOYOYOYOYOYOYOYOYOYOOYOYOY",
+    "Big boi bib bib didli doo"
     ]
     
     override func viewDidLoad() {
