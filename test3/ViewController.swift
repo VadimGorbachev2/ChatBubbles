@@ -10,7 +10,13 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    let cellId = "id"
+    fileprivate let cellId = "id"
+    let textMessages = [
+    "gdhfjkghsdfkjghdskflgjhsdflkgjhsdflgkjhsdf-erytkjdbnvcx,m",
+    "fdfjgh what the fuck",
+    "wwowowowoowowowoowowow",
+    "YOLO YOLO YOLO YOLO YOLO YOLO YOLO OYOOYOYOYOYOYOYOYOYOYOOYOYOY"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,21 +26,21 @@ class ViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         tableView.register(ChatMessageCell.self, forCellReuseIdentifier: cellId)
+        tableView.separatorStyle = .none
     }
     
     // MARK: override tableView methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return textMessages.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatMessageCell
+        // cell.textLabel?.text = "OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK"
+        // cell.textLabel?.numberOfLines = 0
         
-        
-        cell.textLabel?.text = "OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK"
-        cell.textLabel?.numberOfLines = 0
-        
+        cell.messageLabel.text = textMessages[indexPath.row]
         
         return cell
     }
