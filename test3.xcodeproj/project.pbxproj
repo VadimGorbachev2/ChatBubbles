@@ -12,6 +12,7 @@
 		3A3F4AE52377186300B67EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F4AE42377186300B67EED /* ViewController.swift */; };
 		3A3F4AEA2377187200B67EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F4AE92377187200B67EED /* Assets.xcassets */; };
 		3A3F4AED2377187200B67EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F4AEB2377187200B67EED /* LaunchScreen.storyboard */; };
+		3A3F4AF523771EDC00B67EED /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F4AF423771EDC00B67EED /* ChatMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3A3F4AE92377187200B67EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3F4AEC2377187200B67EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A3F4AEE2377187200B67EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3F4AF423771EDC00B67EED /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				3A3F4AE02377186300B67EED /* AppDelegate.swift */,
 				3A3F4AE22377186300B67EED /* SceneDelegate.swift */,
 				3A3F4AE42377186300B67EED /* ViewController.swift */,
+				3A3F4AF423771EDC00B67EED /* ChatMessageCell.swift */,
 				3A3F4AE92377187200B67EED /* Assets.xcassets */,
 				3A3F4AEB2377187200B67EED /* LaunchScreen.storyboard */,
 				3A3F4AEE2377187200B67EED /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3F4AE52377186300B67EED /* ViewController.swift in Sources */,
+				3A3F4AF523771EDC00B67EED /* ChatMessageCell.swift in Sources */,
 				3A3F4AE12377186300B67EED /* AppDelegate.swift in Sources */,
 				3A3F4AE32377186300B67EED /* SceneDelegate.swift in Sources */,
 			);

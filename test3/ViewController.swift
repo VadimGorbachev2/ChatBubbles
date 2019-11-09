@@ -19,15 +19,18 @@ class ViewController: UITableViewController {
         navigationItem.title = "Messages"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(ChatMessageCell.self, forCellReuseIdentifier: cellId)
     }
     
     // MARK: override tableView methods
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 16
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
+    
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        
         
         cell.textLabel?.text = "OKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOKOK"
         cell.textLabel?.numberOfLines = 0
