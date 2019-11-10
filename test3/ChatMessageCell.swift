@@ -67,9 +67,9 @@ class ChatMessageCell: UITableViewCell {
             // MARK: Constraints for label
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
+            messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 24),
            
-            messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
+            messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24),
            // messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor)]
    //         messageLabel.widthAnchor.constraint(equalToConstant: 250),
             messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
@@ -83,9 +83,9 @@ class ChatMessageCell: UITableViewCell {
         NSLayoutConstraint.activate(constraints)
         
         
-        leadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32)
+        leadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 28)
         leadingConstraint.isActive = false
-        trailingConstraint = messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
+        trailingConstraint = messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -28)
         trailingConstraint.isActive = true
         
         
